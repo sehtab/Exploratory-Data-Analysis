@@ -75,4 +75,14 @@ At first, necessarry dependencies are called. Then necessary function are called
                                                  
 23. to get Tukeyhsd:                             from statmodels.stats.multicomp import MultiComparison, mc=MultiComparison(df['Purchased bike'],df["Education"]), 
                                                  print(mc.tukeyhsd())
+                                                 
+24. to get ols:                                   import statsmodels.api as sm, model=sm.OLS(y,x),results=model.fit(),print(results.summary())
+
+25.for normal dist. of target:                    np.log(df.charges)
+
+26.extract r^2:                                 from sklearn.linear_model import LinearRegression, r_sq= LinearRegression().fit(x,y).score(x,y)
+
+27. VIF:                                         1/(1 - r_sq)
+
+
 
